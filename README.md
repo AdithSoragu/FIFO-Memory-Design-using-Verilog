@@ -234,24 +234,6 @@ Data is written only when FIFO is not full.
 ---
 
 ## Memory Write
-
-```verilog
-mem[wr_ptr[FIFO_DEPTH_LOG-1:0]] <= data_in;
-```
-
-Stores incoming data into FIFO memory.
-
----
-
-## Pointer Increment
-
-```verilog
-wr_ptr <= wr_ptr + 1'b1;
-```
-
-Moves the write pointer to the next location.
-
-
 ---
 
 
