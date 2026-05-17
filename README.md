@@ -304,19 +304,6 @@ FIFO becomes empty when:
 
 ---
 
-# 📌 FIFO Full Logic
-
-```verilog
-assign fifo_full =
-(rd_ptr == {~wr_ptr[FIFO_DEPTH_LOG],
-wr_ptr[FIFO_DEPTH_LOG-1:0]});
-```
-
-FIFO becomes full when:
-- Write pointer wraps around
-- Write pointer catches the read pointer
-
----
 
 ---
 
