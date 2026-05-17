@@ -379,20 +379,6 @@ vsim tb_fifo
 
 ---
 
-## Step 3: Run Simulation
-
-```bash
-run -all
-```
-
----
-
-## Step 4: Open Waveform
-
-```bash
-gtkwave dump.vcd
-
-```
 
 # 🚀 Applications of FIFO
 
