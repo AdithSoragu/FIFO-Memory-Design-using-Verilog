@@ -278,20 +278,6 @@ Data is read only when FIFO contains data.
 ```verilog
 data_out <= mem[rd_ptr[FIFO_DEPTH_LOG-1:0]];
 ```
-
-Reads stored data from FIFO.
-
----
-
-## Pointer Increment
-
-```verilog
-rd_ptr <= rd_ptr + 1'b1;
-```
-
-Moves the read pointer forward.
-
-
 ---
 
 
