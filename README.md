@@ -462,19 +462,6 @@ After completing this project, the following concepts are understood:
 
 ---
 
-# 🔮 Future Scope
-
-The project can be improved further by implementing:
-
-- Asynchronous FIFO
-- Gray code pointers
-- Overflow detection
-- Underflow detection
-- Almost full flag
-- Almost empty flag
-
----
-
 # 👨‍💻 Author
 
 ## Adith Soragu
