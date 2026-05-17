@@ -361,22 +361,6 @@ Purpose:
 
 ---
 
-# ▶️ Simulation Procedure
-
-## Step 1: Compile Files
-
-```bash
-vlog fifo.v tb_fifo.v
-```
-
----
-
-## Step 2: Start Simulation
-
-```bash
-vsim tb_fifo
-```
-
 ---
 
 
