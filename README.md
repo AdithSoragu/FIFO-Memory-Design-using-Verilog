@@ -481,9 +481,4 @@ The project can be improved further by implementing:
 
 Electronics and Communication Engineering
 
----
-
-# ⭐ GitHub Repository
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
 
