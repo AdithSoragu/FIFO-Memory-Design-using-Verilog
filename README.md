@@ -340,17 +340,6 @@ The testbench verifies FIFO functionality using multiple scenarios.
 
 ---
 
-## ✅ Scenario 2
-
-### Operations:
-- Simultaneous read and write
-- Continuous FIFO operation
-
-Purpose:
-- Verify real-time FIFO functionality
-
----
-
 ---
 
 
