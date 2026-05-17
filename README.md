@@ -291,19 +291,6 @@ rd_ptr <= rd_ptr + 1'b1;
 
 Moves the read pointer forward.
 
----
-
-# 📌 FIFO Empty Logic
-
-```verilog
-assign fifo_empty = (rd_ptr == wr_ptr);
-```
-
-FIFO becomes empty when:
-- Read pointer equals write pointer
-
----
-
 
 ---
 
