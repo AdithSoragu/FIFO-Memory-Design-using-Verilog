@@ -408,19 +408,6 @@ read_data data_out = 1
 read_data data_out = 10
 read_data data_out = 100
 ```
-
----
-
-# 📈 Waveform Analysis
-
-The waveform confirms:
-- Correct FIFO write operation
-- Correct FIFO read operation
-- FIFO full condition
-- FIFO empty condition
-- Pointer increment behavior
-- Data integrity
-
 ---
 
 # 🚀 Applications of FIFO
