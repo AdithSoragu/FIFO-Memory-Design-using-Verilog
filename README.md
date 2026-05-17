@@ -391,24 +391,8 @@ run -all
 
 ```bash
 gtkwave dump.vcd
+
 ```
-
----
-
-# 📊 Sample Simulation Output
-
-```text
-SCENARIO 1
-
-write_data data_in = 1
-write_data data_in = 10
-write_data data_in = 100
-
-read_data data_out = 1
-read_data data_out = 10
-read_data data_out = 100
-```
----
 
 # 🚀 Applications of FIFO
 
