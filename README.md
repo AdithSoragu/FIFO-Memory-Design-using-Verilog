@@ -265,19 +265,6 @@ The read operation also occurs at positive clock edge.
 
 ## Read Condition
 
-```verilog
-if (cs && rd && !fifo_empty)
-```
-
-Data is read only when FIFO contains data.
-
----
-
-## Memory Read
-
-```verilog
-data_out <= mem[rd_ptr[FIFO_DEPTH_LOG-1:0]];
-```
 ---
 
 
