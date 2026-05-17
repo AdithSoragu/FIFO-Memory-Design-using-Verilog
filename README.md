@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Verilog-blue">
-  <img src="https://img.shields.io/badge/Simulation-ModelSim-green">
+  <img src="https://img.shields.io/badge/Simulation-EDA Playground-green">
   <img src="https://img.shields.io/badge/Status-Completed-success">
 </p>
 
