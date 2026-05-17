@@ -318,28 +318,6 @@ FIFO becomes full when:
 
 ---
 
-# 🧪 Testbench Description
-
-The testbench verifies FIFO functionality using multiple scenarios.
-
----
-
-## ✅ Scenario 1
-
-### Operations:
-- Write 1
-- Write 10
-- Write 100
-- Read all values
-
-### Expected Output
-
-```text
-1 → 10 → 100
-```
-
----
-
 ---
 
 
