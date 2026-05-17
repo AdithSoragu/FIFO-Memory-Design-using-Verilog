@@ -82,19 +82,6 @@ The FIFO design consists of:
 
 ---
 
-# 📂 Project Directory Structure
-
-```text
-FIFO_Design/
-│
-├── fifo.v           # FIFO Design Module
-├── tb_fifo.v        # Testbench File
-├── dump.vcd         # Waveform Dump File
-└── README.md        # Documentation
-```
-
----
-
 # ⚙️ FIFO Specifications
 
 | Parameter | Value |
