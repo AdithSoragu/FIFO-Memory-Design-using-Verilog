@@ -205,17 +205,6 @@ Tracks the write location.
 
 ## 📌 Read Pointer
 
-```verilog
-reg [FIFO_DEPTH_LOG:0] rd_ptr;
-```
-
-Tracks the read location.
-
----
-
-# 📝 Write Logic
-
-
 
 # 🚀 Applications of FIFO
 
