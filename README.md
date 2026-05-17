@@ -215,15 +215,6 @@ Tracks the read location.
 
 # 📝 Write Logic
 
-```verilog
-always @(posedge clk or negedge rst_n)
-```
-
-The write operation occurs at every positive edge of the clock.
-
----
-
-## Write Condition
 
 
 # 🚀 Applications of FIFO
