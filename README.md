@@ -100,9 +100,7 @@ The FIFO design consists of:
 | Tool | Purpose |
 |------|----------|
 | Verilog HDL | Hardware Design |
-| ModelSim | Simulation |
-| QuestaSim | Verification |
-| GTKWave | Waveform Viewing |
+| EDA Playground | Simulation | | Verification |
 
 ---
 
