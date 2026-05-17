@@ -251,19 +251,6 @@ wr_ptr <= wr_ptr + 1'b1;
 
 Moves the write pointer to the next location.
 
----
-
-# 📖 Read Logic
-
-```verilog
-always @(posedge clk or negedge rst_n)
-```
-
-The read operation also occurs at positive clock edge.
-
----
-
-## Read Condition
 
 ---
 
