@@ -193,18 +193,6 @@ Creates FIFO memory storage.
 
 ---
 
-## 📌 Write Pointer
-
-```verilog
-reg [FIFO_DEPTH_LOG:0] wr_ptr;
-```
-
-Tracks the write location.
-
----
-
-## 📌 Read Pointer
-
 
 # 🚀 Applications of FIFO
 
