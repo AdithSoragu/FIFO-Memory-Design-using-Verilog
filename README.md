@@ -448,20 +448,6 @@ FIFO memories are widely used in:
 
 ---
 
-# 📚 Learning Outcomes
-
-After completing this project, the following concepts are understood:
-
-- FIFO architecture
-- Verilog HDL coding
-- Memory design
-- Pointer handling
-- Digital simulation
-- Testbench creation
-- Waveform verification
-
----
-
 # 👨‍💻 Author
 
 ## Adith Soragu
