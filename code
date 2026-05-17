@@ -1,28 +1,51 @@
+module fifo
+    // Parameters section
+    parameter FIFO_DEPTH = 8;
+	parameter DATA_WIDTH = 16;
+    // Ports section   
+	(input clk, 
+     input rst_n,
+     input cs,     // chip select	 
+     input wr, 
+     input rd, 
+     input [DATA_WIDTH-1:0] data_in, 
+     output reg [DATA_WIDTH-1:0] data_out, 
+	 output fifo_empty,
+	 output fifo_full); 
 
+  localparam FIFO_DEPTH_LOG = $clog2(FIFO_DEPTH);// 
+	
+    // Declare a by-dimensional array to store the data
+  reg [DATA_WIDTH-1:0] mem [0:FIFO_DEPTH-1];// depth 8 => [0:7] 32 bit elements
+	
+	// Wr/Rd pointer have 1 extra bits at MSB
+  reg [FIFO_DEPTH_LOG:0] wr_ptr;//3:0
+  reg [FIFO_DEPTH_LOG:0] rd_ptr;//3:0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  //write
+    always @(posedge clk or negedge rst_n) 
+      begin
+      if(!rst_n)//rst =0 system reset happens
+		    wr_ptr <= 0;
+        else if (cs && wr && !fifo_full) begin
+          mem[wr_ptr[FIFO_DEPTH_LOG-1:0]] <= data_in;
+	       wr_ptr <= wr_ptr + 1'b1;
+      end
+      end
+  
+	//read
+	always @(posedge clk or negedge rst_n) 
+      begin
+	    if(!rst_n)
+		    rd_ptr <= 0;
+        else if (cs && rd && !fifo_empty) begin
+          data_out <= mem[rd_ptr[FIFO_DEPTH_LOG-1:0]];
+	        rd_ptr <= rd_ptr + 1'b1;
+      end
+	end
+	
+	// Declare the empty/full logic
+  assign fifo_empty = (rd_ptr == wr_ptr);
+  assign fifo_full  = (rd_ptr == {~wr_ptr[FIFO_DEPTH_LOG], wr_ptr[FIFO_DEPTH_LOG-1:0]});
+  
+endmodule
