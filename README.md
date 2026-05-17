@@ -225,17 +225,6 @@ The write operation occurs at every positive edge of the clock.
 
 ## Write Condition
 
-```verilog
-if (cs && wr && !fifo_full)
-```
-
-Data is written only when FIFO is not full.
-
----
-
-## Memory Write
----
-
 
 # 🚀 Applications of FIFO
 
