@@ -351,16 +351,6 @@ Purpose:
 
 ---
 
-## ✅ Scenario 3
-
-### Operations:
-- Fill FIFO completely
-- Verify FIFO full condition
-- Read entire FIFO contents
-- Verify FIFO empty condition
-
----
-
 ---
 
 
