@@ -178,21 +178,6 @@ fifo_empty = 0
 
 ---
 
-# 🧩 Verilog Design Explanation
-
-## 📌 Memory Declaration
-
-```verilog
-reg [DATA_WIDTH-1:0] mem [0:FIFO_DEPTH-1];
-```
-
-Creates FIFO memory storage.
-
-- Depth = 8
-- Width = 16-bit
-
----
-
 
 # 🚀 Applications of FIFO
 
